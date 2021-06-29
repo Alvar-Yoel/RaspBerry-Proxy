@@ -80,7 +80,7 @@ Si )
 clear
 echo -e "${greenColour}[+]${endColour} Configurando Squid para permitir todo el trafico..."
 sleep 1
-cat /etc/squid/squid.conf | sed 's/http_acacess deny/http_access allow all/' >> /etc/squid/squid.conff
+cat /etc/squid/squid.conf | sed 's/http_access deny ally/http_access allow all/g' >> /etc/squid/squid.conff
 rm -r /etc/squid/squid.conf
 mv /etc/squid/squid.conff /etc/squid/squid.conf
 systemctl restart squid
