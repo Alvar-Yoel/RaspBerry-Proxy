@@ -15,7 +15,7 @@ grayColour="\e[0;37m\033[1m"
 #
 #Dice Saliendo...
 #
-function goodbye() {
+function ctrl_c() {
     # say goodbye
     echo -e "\n\n${purpleColour}[+]${endColour} Saliendo...\n"
     exit 1
